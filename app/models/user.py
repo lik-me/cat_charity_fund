@@ -5,5 +5,5 @@ from app.core.db import Base
 
 
 class User(SQLAlchemyBaseUserTable[int], Base):
-# class User(SQLAlchemyBaseUserTable[int], BaseUser):
     pass
+# class User(SQLAlchemyBaseUserTable[int], BaseUser):

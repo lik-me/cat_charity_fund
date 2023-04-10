@@ -65,7 +65,7 @@ class CRUDCharityproject(CRUDBase):
                 CharityProject).where(
                 CharityProject.id == project_id,
                 and_(
-                    CharityProject.fully_invested == True
+                    CharityProject.fully_invested == 1
                 )
             )
         )
