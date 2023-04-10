@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Text, Integer, ForeignKey
-from app.core.db import Base, BaseAdd
+from app.core.db import Base
 from app.models import User
 
 

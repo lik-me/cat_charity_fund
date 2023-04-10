@@ -16,7 +16,7 @@ from app.schemas.donation import (
 )
 from app.services import donation_handler
 from app.api.validators import (
-    check_name_duplicate, 
+    check_name_duplicate,
     check_charityproject_exists,
     check_project_invested_amount,
     check_project_fully_invested,
@@ -29,7 +29,7 @@ from datetime import datetime
 
 from fastapi import HTTPException
 
-router = APIRouter() 
+router = APIRouter()
 
 
 @router.post(
