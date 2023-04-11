@@ -55,10 +55,9 @@ async def create_donation(
             donation_current_left_global += donation_current_left
             charityproject = await check_charityproject_exists(project.id, session)
             fully_invested_cur = 0
-            close_date = project.close_date
+            # close_date = project.close_date
             if project.full_amount == donation_current_left + project.invested_amount:
                 fully_invested_cur = 1
-                close_date = datetime.now().isoformat(timespec='seconds')
             close_date = datetime.now().isoformat(timespec='seconds')
             obj_in = CharityprojectUpdateThreeFields(
                 invested_amount=project.invested_amount + donation_current_left,
