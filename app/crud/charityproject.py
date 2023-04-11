@@ -50,9 +50,6 @@ class CRUDCharityproject(CRUDBase):
                 )
             )
         db_project_id = db_project_id.scalars().first()
-
-        print(f'ВАЛИДАТОР!!!! project_id = {db_project_id} full_amount = {full_amount}')
-
         return db_project_id
 
     async def check_project_fully_invested(

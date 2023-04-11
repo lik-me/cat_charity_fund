@@ -46,6 +46,7 @@ class CharityProjectResponse(CharityprojectBase):
 
     class Config:
         orm_mode = True
+        min_anystr_length = 1
 
 
 class CharityprojectUpdateThreeFields(BaseModel):
