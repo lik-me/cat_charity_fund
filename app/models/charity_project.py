@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Text
-from app.core.db import Base, BaseAdd
+from app.core.db import Base
 
 
 class CharityProject(Base):
